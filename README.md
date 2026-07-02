@@ -3,7 +3,7 @@
 Porfolio personal construido como **SPA en React + TypeScript** con Vite. Bilingüe
 (EN/ES), con modo claro/oscuro, y un fondo de red de partículas animado en el hero.
 
-🔗 **Demo:** _(agregar URL de Vercel/Netlify al publicar)_
+🔗 **Demo:** https://porfolio-seven-pearl.vercel.app
 
 ## Stack
 
