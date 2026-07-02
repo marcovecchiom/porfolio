@@ -21,6 +21,17 @@
   animation: spin 60s linear infinite;
 }
 
+/* Co-locado con su uso (ver nota en StackMarquee.module.css).
+   Conserva translateY(-50%) para no perder el centrado vertical al rotar. */
+@keyframes spin {
+  from {
+    transform: translateY(-50%) rotate(0);
+  }
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
 .ringInner {
   right: -4%;
   width: min(30vw, 340px);

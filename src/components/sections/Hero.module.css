@@ -39,6 +39,19 @@
   animation: pulse-ring 2.4s ease-out infinite;
 }
 
+/* Co-locado con su uso (ver nota en StackMarquee.module.css). */
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 var(--accent-soft);
+  }
+  70% {
+    box-shadow: 0 0 0 9px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
 .role {
   margin: 0 0 20px;
   font-size: 13.5px;

@@ -16,6 +16,17 @@
   animation: marquee-scroll 72s linear infinite;
 }
 
+/* Co-locado con su uso: CSS Modules scopea el nombre de forma consistente
+   entre el @keyframes y la referencia, así la animación siempre matchea. */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .row {
   display: flex;
   align-items: center;

@@ -45,34 +45,12 @@ a {
   text-decoration: none;
 }
 
-/* --- Keyframes compartidos --- */
-
-@keyframes marquee-scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes pulse-ring {
-  0% {
-    box-shadow: 0 0 0 0 var(--accent-soft);
-  }
-  70% {
-    box-shadow: 0 0 0 9px transparent;
-  }
-  100% {
-    box-shadow: 0 0 0 0 transparent;
-  }
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*
+ * Los @keyframes viven co-locados en el módulo CSS que los usa
+ * (StackMarquee, Hero, Contact). Si se declararan acá y se referenciaran
+ * desde un módulo, CSS Modules hashea el nombre en el `animation` pero no
+ * el `@keyframes` global, y la animación deja de matchear.
+ */
 
 /* Respeto por quienes prefieren menos movimiento. */
 @media (prefers-reduced-motion: reduce) {
