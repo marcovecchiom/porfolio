@@ -1,0 +1,94 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Degradado que funde el canvas con el fondo hacia la esquina. */
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: radial-gradient(120% 90% at 78% 8%, transparent 42%, var(--bg) 80%);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding-block: clamp(84px, 15vh, 168px) clamp(72px, 11vh, 128px);
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 clamp(30px, 5vh, 46px);
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bg) 70%, transparent);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--accent-2);
+  animation: pulse-ring 2.4s ease-out infinite;
+}
+
+.role {
+  margin: 0 0 20px;
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.headline {
+  margin: 0;
+  max-width: 15ch;
+  font-size: clamp(42px, 7.8vw, 94px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.sub {
+  margin: clamp(28px, 4vh, 40px) 0 0;
+  max-width: 58ch;
+  font-size: clamp(17px, 1.6vw, 20px);
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: clamp(36px, 5vh, 48px);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: clamp(52px, 8vh, 88px) 0 0;
+  font-size: 13.5px;
+  color: var(--faint);
+}
+
+.pin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--accent-2);
+  background: color-mix(in srgb, var(--accent-2) 8%, transparent);
+}

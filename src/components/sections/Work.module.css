@@ -1,0 +1,28 @@
+.section {
+  border-bottom: 1px solid var(--border);
+  padding-block: clamp(80px, 12vw, 148px);
+}
+
+.header {
+  margin-bottom: clamp(44px, 6vw, 72px);
+}
+
+.heading {
+  margin: 18px 0 0;
+  max-width: 20ch;
+  font-size: clamp(30px, 4.6vw, 54px);
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: clamp(18px, 2vw, 28px);
+}
+
+/* Cada celda es flex para que las tarjetas igualen su altura en la fila. */
+.grid > * {
+  display: flex;
+}

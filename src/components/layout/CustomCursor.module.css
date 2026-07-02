@@ -1,0 +1,44 @@
+.dot,
+.ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border-radius: 999px;
+  /* El transform inicial evita un salto desde (0,0) antes del primer mousemove. */
+  transform: translate(-50%, -50%);
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background: var(--accent);
+  z-index: 130;
+}
+
+.ring {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--accent);
+  z-index: 129;
+  transition:
+    width 0.22s ease,
+    height 0.22s ease,
+    background-color 0.22s ease;
+}
+
+/* Estado al pasar sobre elementos interactivos (lo togglea el hook por JS).
+   :global mantiene el nombre de clase sin hashear, para poder añadirlo por classList. */
+.ring:global(.is-hovering) {
+  width: 40px;
+  height: 40px;
+  background: color-mix(in srgb, var(--accent) 7%, transparent);
+}
+
+/* En touch/coarse el cursor no debe existir. */
+@media (hover: none), (pointer: coarse) {
+  .dot,
+  .ring {
+    display: none;
+  }
+}

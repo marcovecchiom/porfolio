@@ -1,0 +1,24 @@
+.word {
+  font-weight: 600;
+  /* Subrayado dibujado con un gradiente que animamos por background-size. */
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 0.07em;
+  padding-bottom: 0.08em;
+  transition: background-size 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.drawn {
+  background-size: 100% 0.07em;
+}
+
+.accent {
+  color: var(--accent);
+}
+.accent2 {
+  color: var(--accent-2);
+}
+.accent3 {
+  color: var(--accent-3);
+}

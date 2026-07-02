@@ -1,0 +1,25 @@
+.label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* Color del acento; el modificador .secondary lo cambia al secundario. */
+  --label-color: var(--accent);
+}
+
+.secondary {
+  --label-color: var(--accent-2);
+}
+
+.line {
+  width: 28px;
+  height: 1px;
+  background: var(--label-color);
+}
+
+.text {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--label-color);
+}
