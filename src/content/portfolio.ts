@@ -88,41 +88,48 @@ export interface Translation {
 const PROJECT_META: ProjectMeta[] = [
   {
     num: '01',
+    mono: 'H',
+    stack: ['Next.js', 'React', 'TypeScript', 'Laravel', 'PostgreSQL', 'pgvector', 'OpenAI', 'Docker'],
+    coverPattern:
+      'repeating-linear-gradient(135deg, color-mix(in srgb, var(--ca) 13%, transparent) 0 1px, transparent 1px 12px)',
+  },
+  {
+    num: '02',
     mono: 'A',
     stack: ['MCP', 'Anthropic', 'Bedrock', 'Textract', 'Lambda', 'Step Functions', 'Node.js', 'TypeScript'],
     coverPattern:
       'repeating-radial-gradient(circle at 86% 128%, transparent 0 25px, color-mix(in srgb, var(--ca) 15%, transparent) 25px 26px)',
   },
   {
-    num: '02',
+    num: '03',
     mono: 'm',
     stack: ['React', 'TypeScript', 'Node.js'],
     coverPattern:
       'radial-gradient(color-mix(in srgb, var(--ca) 26%, transparent) 1.4px, transparent 1.7px)',
   },
   {
-    num: '03',
+    num: '04',
     mono: 'W',
     stack: ['React', 'TypeScript'],
     coverPattern:
       'repeating-linear-gradient(45deg, color-mix(in srgb, var(--ca) 14%, transparent) 0 1px, transparent 1px 13px)',
   },
   {
-    num: '04',
+    num: '05',
     mono: 'L',
     stack: ['React Native'],
     coverPattern:
       'repeating-linear-gradient(0deg, color-mix(in srgb, var(--ca) 12%, transparent) 0 1px, transparent 1px 22px), repeating-linear-gradient(90deg, color-mix(in srgb, var(--ca) 12%, transparent) 0 1px, transparent 1px 22px)',
   },
   {
-    num: '05',
+    num: '06',
     mono: 'D',
     stack: ['React', 'Node.js'],
     coverPattern:
       'repeating-linear-gradient(0deg, color-mix(in srgb, var(--ca) 15%, transparent) 0 1px, transparent 1px 15px)',
   },
   {
-    num: '06',
+    num: '07',
     mono: 'T',
     stack: ['React', 'Node.js'],
     coverPattern:
@@ -189,6 +196,11 @@ export const translations: Record<Language, Translation> = {
     },
     work: { label: 'Selected work', headingPre: 'A few things ', headingEm: 'I’ve built.' },
     projects: [
+      {
+        context: 'AI-powered SaaS · Omnichannel',
+        name: 'Holawa',
+        role: 'Multi-tenant SaaS for omnichannel customer communication and sales. A Next.js + Laravel platform with RAG (PostgreSQL/pgvector) and an in-house assistant that automates conversations over WhatsApp.',
+      },
       {
         context: 'Urban Development Secretariat · GCBA',
         name: 'Process Automation Platform',
@@ -304,6 +316,11 @@ export const translations: Record<Language, Translation> = {
     },
     work: { label: 'Trabajo seleccionado', headingPre: 'Algunas cosas ', headingEm: 'que construí.' },
     projects: [
+      {
+        context: 'SaaS con IA · Omnicanal',
+        name: 'Holawa',
+        role: 'SaaS multi-tenant de comunicación y ventas potenciado por IA. Plataforma Next.js + Laravel con RAG (PostgreSQL/pgvector) y un asistente propio que automatiza conversaciones por WhatsApp.',
+      },
       {
         context: 'Secretaría de Desarrollo Urbano · GCBA',
         name: 'Plataforma de Automatización de Trámites',
