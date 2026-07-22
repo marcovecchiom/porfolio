@@ -133,15 +133,26 @@ const PROJECT_META: ProjectMeta[] = [
 /** Tecnologías que desfilan en el marquee (independiente del idioma). */
 export const MARQUEE: string[] = [
   'React',
+  'Next.js',
   'React Native',
   'Node.js',
+  'Fastify',
   'TypeScript',
+  'Laravel',
+  'PHP',
+  'PostgreSQL',
+  'Drizzle',
+  'pgvector',
   'AWS Lambda',
   'S3',
   'Step Functions',
   'Textract',
   'Bedrock',
   'MCP',
+  'Claude Agent SDK',
+  'OpenAI',
+  'RAG',
+  'Docker',
   'Serverless',
   'REST APIs',
   'Scrum',
@@ -155,16 +166,16 @@ export const translations: Record<Language, Translation> = {
     themeLabel: 'Toggle dark mode',
     hero: {
       status: 'Open to senior & architecture roles',
-      role: 'Senior Full Stack Developer & Software Architect',
+      role: 'Senior Software Architect & AI Systems Lead',
       headline: [
         { text: 'I build scalable platforms ' },
         { text: 'and lead', emphasized: true },
         { text: ' the teams that ship them.' },
       ],
-      sub: '10+ years across React, Node.js & TypeScript and AWS Serverless architectures. Currently focused on bringing AI into complex, document-driven operations in gov-tech and fintech.',
+      sub: '10+ years from frontend to full-stack, now architecting AI-driven systems. I embed AI agents (Claude Agent SDK, Bedrock, MCP) into complex, document-driven operations across gov-tech and fintech.',
       cta1: 'View work',
       cta2: 'Get in touch',
-      location: 'Buenos Aires, Argentina · Remote-friendly',
+      location: 'Escobar, Buenos Aires, Argentina · Remote-friendly',
     },
     about: {
       label: 'Approach',
@@ -174,7 +185,7 @@ export const translations: Record<Language, Translation> = {
       body1:
         'I pair the technical depth of a software architect with a solid track record as a Scrum Master. That lets me read a system end to end, translate business vision into engineering decisions, and steer teams toward the solution that actually fits the problem — prioritizing value over a preconceived answer.',
       body2:
-        'Over 10+ years I’ve built and led the platforms behind gov-tech and fintech products. Today I’m focused on integrating AI into complex, document-driven operations.',
+        '10+ years of progression from frontend to full-stack, now architecting AI-driven systems. I lead the design of multi-service TypeScript/Node.js platforms that embed AI agents into complex, document-driven government and fintech operations.',
     },
     work: { label: 'Selected work', headingPre: 'A few things ', headingEm: 'I’ve built.' },
     projects: [
@@ -212,28 +223,34 @@ export const translations: Record<Language, Translation> = {
     exp: { label: 'Experience', headingPre: '10+ years, ', headingEm: 'end to end.' },
     experience: [
       {
+        company: 'Holawa',
+        role: 'Full Stack Developer',
+        period: 'Jul 2026 — Present',
+        line: 'Building an AI-powered, multi-tenant SaaS for omnichannel customer communication and sales; Next.js + Laravel, with RAG (PostgreSQL/pgvector) and an in-house conversational assistant.',
+      },
+      {
         company: 'Phinx Labs',
-        role: 'Sr. Full Stack Dev & Architect',
+        role: 'Software Architect & AI Systems Lead',
         period: 'Oct 2024 — Jul 2026',
-        line: 'AI-driven gov-tech & fintech automation on AWS Serverless; technical reference and team lead.',
+        line: 'Architected a multi-service TypeScript/Node.js platform with AI agents (Claude Agent SDK, Bedrock, MCP) that cut document review by ~99%; technical direction for a 15-person org.',
       },
       {
         company: 'Clave',
-        role: 'Full Stack Dev & Scrum Master',
+        role: 'Full Stack Developer',
         period: 'Dec 2021 — May 2023',
-        line: 'Core architecture of a transactional crypto wallet, from concept to launch.',
+        line: 'Core architecture of a transactional crypto wallet, from concept to launch — in a dual developer and Scrum Master role.',
       },
       {
         company: 'Wenance',
-        role: 'Full Stack Dev & Scrum Master',
+        role: 'Full Stack Developer',
         period: 'Jun — Dec 2021',
-        line: 'Onboarding, KYC and credit-scoring flows in React Native; led agile adoption.',
+        line: 'Onboarding, KYC and credit-scoring flows in React Native; led the company-wide agile adoption as Scrum Master.',
       },
       {
         company: 'Zetech · TuRecibo.com',
-        role: 'Developer & Scrum Master',
+        role: 'Full Stack Developer',
         period: 'Jun 2020 — Jun 2021',
-        line: 'Refactored and optimized a document-management platform; reduced technical debt.',
+        line: 'Refactored and optimized a document-management platform (React/Node.js) as Scrum Master; reduced technical debt.',
       },
       {
         company: 'Pulpo Media',
@@ -264,16 +281,16 @@ export const translations: Record<Language, Translation> = {
     themeLabel: 'Cambiar modo oscuro',
     hero: {
       status: 'Disponible para roles senior y de arquitectura',
-      role: 'Senior Full Stack Developer & Software Architect',
+      role: 'Senior Software Architect & AI Systems Lead',
       headline: [
         { text: 'Construyo plataformas escalables ' },
         { text: 'y lidero', emphasized: true },
         { text: ' los equipos que las hacen realidad.' },
       ],
-      sub: '10+ años en React, Node.js & TypeScript y arquitecturas AWS Serverless. Hoy enfocado en llevar IA a operativas documentales complejas en gov-tech y fintech.',
+      sub: '10+ años de frontend a full-stack, hoy arquitectando sistemas basados en IA. Integro agentes de IA (Claude Agent SDK, Bedrock, MCP) en operativas documentales complejas de gov-tech y fintech.',
       cta1: 'Ver proyectos',
       cta2: 'Hablemos',
-      location: 'Buenos Aires, Argentina · Trabajo remoto',
+      location: 'Escobar, Buenos Aires, Argentina · Trabajo remoto',
     },
     about: {
       label: 'Enfoque',
@@ -283,7 +300,7 @@ export const translations: Record<Language, Translation> = {
       body1:
         'Combino la profundidad técnica del arquitecto con una sólida trayectoria como Scrum Master. Eso me permite leer el sistema de extremo a extremo, traducir la visión de negocio en decisiones de ingeniería y orientar a los equipos hacia la solución que mejor se adapta al problema — priorizando el valor sobre la respuesta preconcebida.',
       body2:
-        'En 10+ años construí y lideré las plataformas detrás de productos gov-tech y fintech. Hoy estoy enfocado en integrar IA en operativas documentales complejas.',
+        '10+ años de progresión de frontend a full-stack, hoy arquitectando sistemas basados en IA. Lidero el diseño de plataformas TypeScript/Node.js de múltiples servicios que integran agentes de IA en operativas documentales complejas de gobierno y fintech.',
     },
     work: { label: 'Trabajo seleccionado', headingPre: 'Algunas cosas ', headingEm: 'que construí.' },
     projects: [
@@ -321,28 +338,34 @@ export const translations: Record<Language, Translation> = {
     exp: { label: 'Experiencia', headingPre: '10+ años, ', headingEm: 'de punta a punta.' },
     experience: [
       {
+        company: 'Holawa',
+        role: 'Full Stack Developer',
+        period: 'Jul 2026 — Presente',
+        line: 'Desarrollo de un SaaS multi-tenant de comunicación y ventas potenciado por IA; Next.js + Laravel, con RAG (PostgreSQL/pgvector) y un asistente conversacional propio.',
+      },
+      {
         company: 'Phinx Labs',
-        role: 'Sr. Full Stack Dev & Arquitecto',
+        role: 'Software Architect & AI Systems Lead',
         period: 'Oct 2024 — Jul 2026',
-        line: 'Automatización gov-tech y fintech con IA sobre AWS Serverless; referente técnico y líder de equipo.',
+        line: 'Arquitecté una plataforma TypeScript/Node.js de múltiples servicios con agentes de IA (Claude Agent SDK, Bedrock, MCP) que redujo la revisión documental ~99%; dirección técnica de una organización de 15 personas.',
       },
       {
         company: 'Clave',
-        role: 'Full Stack Dev & Scrum Master',
+        role: 'Full Stack Developer',
         period: 'Dic 2021 — May 2023',
-        line: 'Arquitectura core de una billetera cripto transaccional, de la idea al launch.',
+        line: 'Arquitectura core de una billetera cripto transaccional, de la idea al launch — en un rol doble de desarrollo y Scrum Master.',
       },
       {
         company: 'Wenance',
-        role: 'Full Stack Dev & Scrum Master',
+        role: 'Full Stack Developer',
         period: 'Jun — Dic 2021',
-        line: 'Flujos de onboarding, KYC y scoring crediticio en React Native; lideré la adopción ágil.',
+        line: 'Flujos de onboarding, KYC y scoring crediticio en React Native; lideré la adopción ágil transversal como Scrum Master.',
       },
       {
         company: 'Zetech · TuRecibo.com',
-        role: 'Developer & Scrum Master',
+        role: 'Full Stack Developer',
         period: 'Jun 2020 — Jun 2021',
-        line: 'Refactorización y optimización de una plataforma de gestión documental; menos deuda técnica.',
+        line: 'Refactorización y optimización de una plataforma de gestión documental (React/Node.js) como Scrum Master; menos deuda técnica.',
       },
       {
         company: 'Pulpo Media',
